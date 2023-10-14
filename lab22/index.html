@@ -1,0 +1,81 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <title>To do List</title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            .a1{
+                background-color: rgb(0, 0, 0);
+                color: rgb(255, 255, 255);
+                padding: 5px;
+                border: none;
+                margin-left: 10px;
+            }
+            .a2{
+                color: rgb(255, 255, 255);
+                text-align: center;
+            }
+            body{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 100vh;
+                background:linear-gradient(rgb(223, 54, 54),#00ff15); 
+            }
+            .todo{
+                background-color: rgb(60, 0, 255);
+                padding: 10px;
+                width: 400px;
+                height: 70vh;
+            }
+            .todo input{
+                width: 80%;
+                padding: 5px;
+            }
+            .todo ol li{
+                position: relative;
+                margin-bottom: 10px;
+            }
+            .todo ol li .check{
+                position: absolute;
+                right: 10px;
+            }
+            .todo ol li .delete{
+                position: absolute;
+                right: 40px;
+            }
+            .todo .checked{
+                text-decoration: line-through;
+                color: #00ff15;
+            }
+        </style>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    </head>
+
+    <body>
+
+        <div class="todo">
+
+            <h1 class="a2">To Do List</h1>
+
+            <input type="text" placeholder="Write whatever you like">
+            <button class="a1">Add</button>
+
+            <div class="task">
+                <ol>
+                    
+                </ol>
+            </div>
+
+        </div>
+
+
+        <script src="me.js" defer></script>
+
+
+    </body>
+
+</html>
+
